@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:elastic="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            app:logo="@drawable/ic_launcher"
+            android:background="@color/colorTab" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/l"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#f1f0f0"
+            android:weightSum="1">
+
+            <android.support.design.widget.CoordinatorLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="10"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/viewA"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:weightSum="2"
+                        android:background="@android:color/holo_orange_light"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:id="@+id/layout"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Select a audio"
+                                    android:id="@+id/name" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:id="@+id/play"
+                                    android:layout_marginLeft="5dp"
+                                    android:visibility="gone"
+                                    android:src="@drawable/play"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/viewB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="#f6f6f6">
+
+                        <com.appetite.Designs.FloatingEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/actor"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffffff"
+                            android:inputType="textCapWords"
+                            android:layout_margin="16dp"
+                            android:hint="Actor"
+                            android:textColorHint="#80000000"
+                            android:textColor="#000000"
+                            android:paddingLeft="5dp" />
+
+                        <com.appetite.Designs.FloatingEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/movie"
+                            android:inputType="textCapWords"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffffff"
+                            android:textColorHint="#80000000"
+                            android:textColor="#000000"
+                            android:layout_margin="16dp"
+                            android:hint="Movie"
+                            android:paddingLeft="5dp" />
+
+                        <com.appetite.Designs.FloatingEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/tag"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ffffff"
+                            android:textColorHint="#80000000"
+                            android:textColor="#000000"
+                            android:inputType="textCapWords"
+                            android:layout_margin="16dp"
+                            android:hint="Tag"
+                            android:paddingLeft="5dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="UPLOAD"
+                            android:id="@+id/upload"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/imageView6"
+                    android:layout_width="100dp"
+                    app:backgroundTint="#ffb931"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/upload"
+                    app:layout_anchor="@id/viewA"
+                    android:layout_margin="16dp"
+                    app:layout_anchorGravity="center|bottom|right"/>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

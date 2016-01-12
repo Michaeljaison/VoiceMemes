@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorYellow">#ffb931</color>
+
+    <dimen name="tab_text_size">15sp</dimen>
+    <color name="tab_text_color">#9FC1FB</color>
+    <color name="tab_text_selected_color">#FFFFFF</color>
+    <color name="tab_text_disabled_color">#000000</color>
+    <color name="tab_ripple_color">#000000</color>
+    <color name="tab_underline_color">#283593</color>
+    <dimen name="tab_underline_height">5dp</dimen>
+    <integer name="tab_max_column">4</integer>
+    <dimen name="tab_nav_button_width">36dp</dimen>
+    
+    <color name="colorTab">#091725</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+</resources>

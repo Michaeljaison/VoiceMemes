@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+     <!-- TabIndicator Attribute -->
+    <declare-styleable name="TabIndicator">
+        <attr name="tab_text_size" format="dimension"/>
+        <attr name="tab_text_color" format="color"/>
+        <attr name="tab_text_selected_color" format="color"/>
+        <attr name="tab_text_disabled_color" format="color"/>
+        <attr name="tab_ripple_color" format="color"/>
+        <attr name="tab_underline_color" format="color"/>
+        <attr name="tab_underline_height" format="dimension"/>
+        <attr name="tab_max_column" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatingEditText">
+        <attr name="floating_edit_text_hint_scale" format="float"/>
+        <attr name="floating_edit_text_color" format="color"/>
+        <attr name="floating_edit_text_highlighted_color" format="color"/>
+        <attr name="floating_edit_text_error_color" format="color"/>
+        <attr name="floating_edit_text_underline_height" format="dimension"/>
+        <attr name="floating_edit_text_underline_highlighted_height" format="dimension"/>
+    </declare-styleable>
+    <!-- FloatingEditText Default -->
+    <color name="floating_edit_text_color">#80091725</color>
+    <color name="floating_edit_text_highlighted_color">#ff3f51b5</color>
+    <color name="floating_edit_text_error_color">#DB4437</color>
+    <dimen name="floating_edit_text_underline_height">1dp</dimen>
+    <dimen name="floating_edit_text_underline_highlighted_height">2dp</dimen>
+
+</resources>

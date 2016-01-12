@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f0f0">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            app:logo="@drawable/ic_launcher"
+            android:background="@color/colorTab" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="#ffffff"
+                android:id="@+id/searchlayout">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/searchitem"
+                    android:padding="5dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorTab"
+                    android:textColorHint="#80091725"
+                    android:background="#ffffff"
+                    android:drawableLeft="@drawable/search_icon"
+                    android:inputType="textCapSentences"
+                    android:layout_weight="1"
+                    android:hint="Search Bar" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:src="@drawable/search"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/searchbutton" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#a7a7a7">
+
+                <com.appetite.Designs.GridViewWithHeaderAndFooter
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center"
+                    android:background="#f1f0f0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@color/colorTab"-->
+        <!--android:layout_height="50dp">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_launcher"-->
+            <!--android:padding="2dp"-->
+            <!--android:id="@+id/imageView7" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:text="Voice Memes"-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:gravity="center_vertical" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/upload"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:id="@+id/imageView8" />-->
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

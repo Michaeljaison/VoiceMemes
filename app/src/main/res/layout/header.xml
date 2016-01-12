@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#f1f0f0">
+
+        <com.appetite.Designs.TabIndicator
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorTab"
+            android:fillViewport="false"
+            android:id="@+id/tab" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTab"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Actors"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
